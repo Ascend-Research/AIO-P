@@ -1,0 +1,12 @@
+_BASE_: "COCO_Detect_FPN_Adapted_OFA.yml"
+MODEL:
+  META_ARCHITECTURE: "PanopticFPN"
+  MASK_ON: True
+  SEM_SEG_HEAD:
+    NAME: "SemSegFPNHAdaptedHead"
+    LOSS_WEIGHT: 0.5
+DATASETS:
+  TRAIN: ("coco_2017_train_panoptic_separated",)
+  TEST: ("coco_2017_val_panoptic_separated",)
+DATALOADER:
+  FILTER_EMPTY_ANNOTATIONS: False
