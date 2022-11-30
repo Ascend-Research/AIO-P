@@ -59,7 +59,7 @@ These commands worked for us, but your mileage may vary. We note that for Detect
 
 ## Experiments
 ### Training individual architectures
-> The `run_train_cgs_on_task.py` will train individual architectures to be used as test architectures that represent the ground truth.
+> The `run_train_cgs_on_task.py` will train individual architectures to be used as test architectures that represent the ground truth.\
 > Inside the *cache* folder, this script will output a subfolder with a `.txt` file that contains the logs and a `.pkl` file with the trained architectures 
 #### Example for Detectron2
 ```
@@ -90,7 +90,7 @@ python run_train_cgs_on_task.py -family ofa_mbv3 -task hpe2d -tag individual -st
 
 
 ### Generating HPE latent representation caches
-> These caches are needed for the HPE training shared head experiments
+> These caches are needed for the HPE training shared head experiments\
 > The caches are passed in at the `--cache_file` flag for `run_train_head_on_task.py`
 
 
@@ -103,7 +103,7 @@ You might need run `export PYTHONPATH=$PYTHONPATH:/path/to/this/directory/`
 - `--data_dir` is the folder path of the data directory that contains the HPE data and it should contain both `lsp` and `lsp_extended` subfolders
 
 ### Training the shared head weights
-> `run_train_head_on_task.py` will train the shared head.
+> `run_train_head_on_task.py` will train the shared head.\
 > The script will produce a `.pkl` file that contains the shared head weights.
 #### For Detectron2
 We do not generate caches as COCO is too big, but sample latent representations on the fly.
@@ -188,7 +188,7 @@ python run_train_cgs_on_task.py -family ofa_mbv3 -task hpe2d -tag shared --lr_co
 
 
 ### Profiler
-> Run this profiling script to get the FLOPs and Params of all the architectures in a .pkl cache file
+> Run this profiling script to get the FLOPs and Params of all the architectures in a .pkl cache file\
 > `run_profiler.py` will take a cache file containing architectures, profile those architectures, and then overwrite the cache file(s) with new file(s) containing flops and params
 
 #### For Detectron2
@@ -213,7 +213,7 @@ python run_profiler.py -task hpe2d -profiler flops params -reprofile --data_dir 
 
 
 ### Make cg caches from .pkl files
-> This scripts takes the output folders from run_train_cgs_on_task.py, which contains multiple `.pkl` files and combines it into a single `.pkl` file
+> This scripts takes the output folders from run_train_cgs_on_task.py, which contains multiple `.pkl` files and combines it into a single `.pkl` file\
 > This script outputs a single file named "gpi_ofa_{family}_{test_metric}_{suffix}_comp_graph_cache.pkl"
 
 #### For Detectron2
@@ -263,10 +263,11 @@ python run_gpi_acc_predictor.py -model_name MODEL_NAME -family_train nb101 -fami
 We also include some files for making new compute graphs from .pb files and visualizing them.
 
 #### Making new CGs from .pb files
-> See `make_cg.py`
-> We provide sample .pb files for EfficientNet-b0 and ResNet18.
+> See `make_cg.py`\
+> We provide sample .pb files for EfficientNet-b0 and ResNet18. 
 
 #### Visualization of CGs
-> See visualize_cgs.py
-> Need graphviz library.
-> Saves CGs as images which you can then view.
+> See `visualize_cgs.py`\
+> Need graphviz library.\
+> Saves CGs as images which you can then view.\
+> E.g., print pictures for the models we provided `.pb` files for, then compare to the actual model using [Netron](https://netron.app/).
