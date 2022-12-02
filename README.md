@@ -1,7 +1,7 @@
 # Expanding Neural Performance Predictors Beyond Image Classification
 
 Repository for the paper
-> AIO-P: Expanding Neural Performance Predictors Beyond Image Classification \
+> [AIO-P: Expanding Neural Performance Predictors Beyond Image Classification](https://arxiv.org/abs/2211.17228) \
 > Keith G. Mills, Di Niu, Mohammad Salameh, Weichen Qiu, Fred X. Han, Puyuan Liu, Jialin Zhang, Wei Lu and Shangling Jui \
 > AAAI-23
 
