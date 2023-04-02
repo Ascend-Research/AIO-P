@@ -3,7 +3,13 @@
 Repository for the paper
 > [AIO-P: Expanding Neural Performance Predictors Beyond Image Classification](https://arxiv.org/abs/2211.17228) \
 > Keith G. Mills, Di Niu, Mohammad Salameh, Weichen Qiu, Fred X. Han, Puyuan Liu, Jialin Zhang, Wei Lu and Shangling Jui \
-> AAAI-23
+> AAAI-23 Oral Presentation
+
+Specifically, we provide the following:
+- Computation Graph (CG) data caches for all datasets used in the paper.
+- Code for generating individually labeled CG samples, as well as training a shared head to generate pseudo-labels.
+- Predictor code including AIO-P with *k*-Adapters and label scaling, as well as the baseline GNN.
+- Code API for generating, loading and visualizing CGs.
 
 ## Setup
 ### Dependencies
@@ -271,3 +277,14 @@ We also include some files for making new compute graphs from .pb files and visu
 > Need graphviz library.\
 > Saves CGs as images which you can then view.\
 > E.g., print pictures for the models we provided `.pb` files for, then compare to the actual model using [Netron](https://netron.app/).
+
+### Bibtex 
+If you find our data or CG API useful, we kindly ask that you cite our paper:
+```
+@inproceedings{mills2023aiop,
+  title = {AIO-P: Expanding Neural Performance Predictors Beyond Image Classification},
+  author = {Mills, Keith G. and Niu, Di and Salameh, Mohammad and Qiu, Weichen and Han, Fred X. and Liu, Puyuan and Zhang, Jialin and Lu, Wei and Jui, Shangling},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2023}
+}
+```
