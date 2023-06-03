@@ -1,5 +1,19 @@
 # Expanding Neural Performance Predictors Beyond Image Classification
 
+<p align="center">
+    <a href="https://aaai.org/Conferences/AAAI-23/" alt="Conference">
+        <img src="https://img.shields.io/badge/AAAI'23-blue" /></a>
+    <a href="https://github.com/Ascend-Research/AIO-P/blob/master/LICENSE" alt="License">
+        <img src="https://img.shields.io/badge/License-MIT-purple" /></a>
+    <a href="https://www.python.org/" alt="Python">
+        <img src="https://img.shields.io/badge/Python-3.7-yellow" /></a>
+    <a href="https://pytorch.org/" alt="PyTorch">
+        <img src="https://img.shields.io/badge/PyTorch-1.8-orange" /></a>
+    <a href="https://www.tensorflow.org/" alt="TensorFlow">
+        <img src="https://img.shields.io/badge/TensorFlow-1.15-darkred" /></a>
+<p/>
+
+
 Repository for the paper
 > [AIO-P: Expanding Neural Performance Predictors Beyond Image Classification](https://arxiv.org/abs/2211.17228) \
 > Keith G. Mills, Di Niu, Mohammad Salameh, Weichen Qiu, Fred X. Han, Puyuan Liu, Jialin Zhang, Wei Lu and Shangling Jui \
