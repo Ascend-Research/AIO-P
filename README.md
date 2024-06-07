@@ -19,6 +19,8 @@ Repository for the paper
 > Keith G. Mills, Di Niu, Mohammad Salameh, Weichen Qiu, Fred X. Han, Puyuan Liu, Jialin Zhang, Wei Lu and Shangling Jui \
 > AAAI-23 Oral Presentation
 
+[[Poster](https://kgmills.github.io/assets/posters/AIO-P_AAAI23_poster.pdf)][[Video](https://underline.io/events/380/sessions/14509/lecture/67761-aio-p-expanding-neural-performance-predictors-beyond-image-classification)][[Slides](https://kgmills.github.io/assets/slides/AIO-P_AAAI23_slides.pdf)]
+
 Specifically, we provide the following:
 - Computation Graph (CG) data caches for all datasets used in the paper.
 - Code for generating individually labeled CG samples, as well as training a shared head to generate pseudo-labels.
