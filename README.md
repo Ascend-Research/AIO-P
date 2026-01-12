@@ -56,11 +56,11 @@ These commands worked for us, but your mileage may vary. We note that for Detect
 
 ### Downloading Datasets
 - Download Computational Graph (CG) caches:
-    - Download `cache.zip` from the [shared google drive](https://drive.google.com/drive/folders/1CxHYLAH8AsFz138325xWo1aIlfB-KPx4) and place all `.pkl` files in `/cache/`.
+    - Download `cache.zip` from the ~~[shared google drive](https://drive.google.com/drive/folders/1CxHYLAH8AsFz138325xWo1aIlfB-KPx4)~~ [HuggingFace repo](https://huggingface.co/datasets/kgmills/AIO-P/tree/main) and place all `.pkl` files in `/cache/`.
       - Caches with `ind` in their name are individually-trained architectures. `shared` refers to architectures fine-tuned by a shared head.
       - `deeplab' or `slim' caches refer to model zoos.
       - Caches without either are classifiction CGs.
-    - Download `sample_pbs.zip` from the [shared google drive](https://drive.google.com/drive/folders/1CxHYLAH8AsFz138325xWo1aIlfB-KPx4) for examples of ResNet-18 and EfficientNet-B0.
+    - Download `sample_pbs.zip` from the ~~[shared google drive](https://drive.google.com/drive/folders/1CxHYLAH8AsFz138325xWo1aIlfB-KPx4)~~ [HuggingFace repo](https://huggingface.co/datasets/kgmills/AIO-P/tree/main) for examples of ResNet-18 and EfficientNet-B0.
 - Download the following datasets:
     - [LSP](http://sam.johnson.io/research/lsp.html)
         - Unzip contents to `data/HPE/lsp`
